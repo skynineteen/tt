@@ -1,0 +1,42 @@
+.about-content {
+  display: flex;
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+  }
+
+  &__text {
+    text-align: right;
+    width: 50%;
+
+    @media screen and (max-width: 1024px) {
+      text-align: left;
+      padding: 40px 0;
+      width: 100%;
+    }
+  }
+
+  &__img {
+    max-width: 544px;
+    width: 50%;
+    align-self: center;
+    // wrapping content around a shape:
+    // shape-outside: url(../images/about.png);
+    // shape-image-threshold: 0.5;
+    // shape-margin: 10px;
+    // float: left;
+
+    @media screen and (max-width: 1024px) {
+      width: 100%;
+    }
+  }
+}
+
+.button--about {
+  display: block;
+  margin: 90px auto 45px;
+
+  @media screen and (orientation: portrait), screen and (max-width: 950px) {
+    margin: 40px auto 25px;
+  }
+}

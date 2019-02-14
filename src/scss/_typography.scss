@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Poppins');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: $text-color;
+}
+
+p {
+  font-size: 17px;
+  font-weight: 200;
+  line-height: 35px;
+}
+
+.heading {
+  font: {
+    family: 'Poppins', sans-serif;
+    size: 33px;
+    weight: 400;
+  }
+  color: #aaa;
+
+  & span {
+    color: #bfcfff;
+  }
+
+  &--link {
+    margin: 15px 0;
+    transition: opacity 0.4s;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &--header {
+    margin-top: 25px;
+    color: $blue;
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+  }
+  &-section {
+    font: {
+      size: 45px;
+      weight: 300;
+    }
+    text: {
+      transform: capitalize;
+      align: center;
+    }
+    color: $purple;
+    padding: 0 10px;
+  }
+}
+
+.subheading {
+  &--link {
+    font: {
+      size: 14px;
+      family: 'Poppins', sans-serif;
+      weight: normal;
+    }
+    letter-spacing: 2px;
+    color: #c3cacf;
+    text-transform: uppercase;
+    padding: 0 10px;
+  }
+
+  &--header {
+    margin: 150px 0 20px;
+    font-size: 45px;
+    font-weight: 300;
+  }
+
+  &-section {
+    font: {
+      size: 22px;
+      family: 'Poppins', sans-serif;
+      weight: 700;
+    }
+    text: {
+      align: center;
+      transform: uppercase;
+    }
+    letter-spacing: 3px;
+    line-height: 26px;
+    color: #000;
+    margin-bottom: 100px;
+  }
+}

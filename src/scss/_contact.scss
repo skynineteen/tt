@@ -1,0 +1,51 @@
+.section--contact {
+  & form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+    @include mediaMd {
+      flex-direction: column;
+    }
+  }
+}
+
+input {
+  padding: 30px 80px;
+  border-top-left-radius: 42px;
+  border-bottom-left-radius: 42px;
+  border: none;
+  outline: none;
+  box-shadow: 0 10px 50px #e8e7fb;
+  font: {
+    family: 'Poppins', sans-serif;
+    weight: bold;
+    size: 12px;
+  }
+  text-transform: uppercase;
+  max-width: 500px;
+  width: 100%;
+  margin: 20px 0;
+
+  @include mediaLg {
+    width: 60%;
+  }
+
+  @include mediaMd {
+    width: 100%;
+    border-radius: 42px;
+    text-align: center;
+  }
+}
+
+.button--contact {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-image: linear-gradient(to right, #5f47fd 0%, #8e5ae2 100%);
+  box-shadow: 0 10px 50px #e8e7fb;
+
+  @include mediaMd {
+    border-radius: 42px;
+  }
+}

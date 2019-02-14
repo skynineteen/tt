@@ -1,0 +1,130 @@
+.section--reviews {
+  display: flex;
+  width: 80%;
+  margin: auto;
+
+  @include mediaMd {
+    flex-wrap: wrap;
+  }
+
+  & h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    font-size: 48px;
+    line-height: 69px;
+    font-weight: 500;
+    margin-right: 25px;
+    position: relative;
+
+    @include mediaLg {
+      font-size: 40px;
+      line-height: 60px;
+    }
+
+    &::before {
+      content: '\0201C';
+      display: block;
+      font-size: 200px;
+      color: #e9effc;
+      position: absolute;
+      top: -10px;
+      left: 0;
+    }
+  }
+}
+
+.reviews-list {
+  @include ul-reset;
+  display: flex;
+  flex-wrap: wrap;
+
+  & p {
+    margin-top: 0;
+  }
+
+  &__item {
+    margin: 0 25px 25px;
+    width: 25%;
+
+    @media screen and (max-width: 1300px) {
+      width: 40%;
+    }
+
+    @media screen and (max-width: 960px) {
+      width: 100%;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:nth-child(2n) .reviews-list__letter {
+      background-color: #bfcfff;
+    }
+
+    &:nth-child(3n) .reviews-list__letter {
+      background-color: #99ccff;
+    }
+  }
+
+  &__content {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 30px #e1e5f3;
+    padding: 23px 27px;
+
+    position: relative;
+
+    &::after {
+      position: absolute;
+      bottom: -30px;
+      left: 0;
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      border: 0 solid transparent;
+      border-left-width: 0px;
+      border-right-width: 35px;
+      border-top: 45px solid #fff;
+      filter: drop-shadow(0 30px 15px #e1e5f3);
+    }
+  }
+
+  &__author {
+    display: flex;
+    padding: 5px 2px;
+    align-items: center;
+    color: #333;
+    font-weight: bold;
+  }
+
+  &__letter {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #938bff;
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    align-self: center;
+  }
+}
+
+.stars {
+  font-size: 0;
+  &__item {
+    display: inline-block;
+    background: url(../images/star.svg) 50% 50% no-repeat;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+  }
+}

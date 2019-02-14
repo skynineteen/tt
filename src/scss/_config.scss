@@ -1,0 +1,29 @@
+// vars
+$light-grey: #f6f8f9;
+$grey: #ddd;
+$purple: #6048ff;
+$blue: #044c85;
+$text-color: #79796a;
+$yellow: #ffc041;
+
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin mediaLg {
+  @media screen and (max-width: 1170px) {
+    @content;
+  }
+}
+@mixin mediaXL {
+  @media screen and (min-width: 1171px) {
+    @content;
+  }
+}
